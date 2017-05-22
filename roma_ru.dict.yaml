@@ -1,0 +1,45 @@
+# Dictionary of Russian romaji IME
+
+# https://en.wikipedia.org/wiki/Romanization_of_Russian
+
+---
+name: roma_ru
+version: "0.1"
+sort: by_weight
+use_preset_vocabulary: false
+...
+
+а	a	0       
+б	b	0
+в	v	0
+г	g	0
+д	d	0
+е	ye	0
+ё	yo	0
+ж	zh	0
+з	z	0
+и	i	0
+й	j	0
+к	k	0
+л	l	0
+м	m	0
+н	n	0
+о	o	0
+п	p	0
+р	r	0
+с	s	0
+т	t	0
+у	u	0
+ф	f	0
+х	h	0
+ц	ts	0
+ч	ch	0
+ш	sh	0
+щ	shh	0
+ъ	q	0
+ы	y	0
+ь	q	0
+э	e	0
+ю	yu	0
+я	ya	0
+

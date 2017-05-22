@@ -1,0 +1,56 @@
+# Rime default settings
+# Rime schema: Russian romaji IME
+# encoding: utf-8
+
+# https://en.wikipedia.org/wiki/Romanization_of_Russian
+
+schema:
+  schema_id: roma_ru
+  name: "俄语"
+  version: "0.1"
+  author:
+    - sgqy <https://github.com/sgqy>
+  description: |
+    俄语输入法
+    使用罗马字逆转换
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 俄文, 拉丁 ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - script_translator
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba'
+  delimiter: " "
+
+translator:
+  dictionary: roma_ru
+
+punctuator:
+  import_preset: default
+
+key_binder:
+  import_preset: default
+
+recognizer:
+  import_preset: default
+
