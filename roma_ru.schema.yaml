@@ -42,8 +42,47 @@ engine:
     - script_translator
 
 speller:
-  alphabet: zyxwvutsrqponmlkjihgfedcba'
-  delimiter: " "
+  alphabet: ZYXWVUTSRQPONMLKJIHGFEDCBAzyxwvutsrqponmlkjihgfedcba'`
+  delimiter: "'"
+  use_space: true
+  auto_select: true
+  auto_select_pattern: /.+ $/
+  algebra:
+   - derive/^ya$/q/
+   - derive/^shh$/sc/
+   - xform/^a'$/A/
+   - xform/^b'$/B/
+   - xform/^v'$/V/
+   - xform/^g'$/G/
+   - xform/^d'$/D/
+   - xform/^ye'$/YE/
+   - xform/^yo'$/YO/
+   - xform/^zh'$/ZH/
+   - xform/^z'$/Z/
+   - xform/^i'$/I/
+   - xform/^j'$/J/
+   - xform/^k'$/K/
+   - xform/^l'$/L/
+   - xform/^m'$/M/
+   - xform/^n'$/N/
+   - xform/^o'$/O/
+   - xform/^p'$/p/
+   - xform/^r'$/R/
+   - xform/^s'$/S/
+   - xform/^t'$/T/
+   - xform/^u'$/U/
+   - xform/^f'$/F/
+   - xform/^h'$/H/
+   - xform/^ts'$/TS/
+   - xform/^ch'$/CH/
+   - xform/^sh'$/SH/
+   - xform/^shh'$/SHH/
+   - xform/^y'$/Y/
+   - xform/^e'$/E/
+   - xform/^yu'$/YU/
+   - xform/^ya'$/YA/
+   - derive/^YA$/Q/
+   - derive/^SHH$/SC/
 
 translator:
   dictionary: roma_ru
